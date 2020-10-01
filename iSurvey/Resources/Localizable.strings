@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  iSurvey
+
+  Created by Dionisis Karatzas on 30/9/20.
+  
+*/
+
+"welcome" = "Welcome";
+"start_survey" = "Start Survey";
+"retry_submit" = "Retry Submit";
+"submit" = "Submit";
+"next" = "Next  ";
+"previous" = "Previous";
+"question" = "Question";
+"total_submitted" = "Total Submitted";
+"already_submitted" = "Already Submitted";
+"fetch_survey_error" = "Failed to fetch survey from the server. Please try again";
+"submit_answer_error" = "Failed to submit answer to the server. Please try again";
+"answer_submitted" = "Your answer submitted successfully";
+"thank_you" = "Thank you!";
+"exit" = "Exit";
+

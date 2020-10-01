@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CollectionViewPagingLayout",
+        "repositoryURL": "https://github.com/amirdew/CollectionViewPagingLayout.git",
+        "state": {
+          "branch": null,
+          "revision": "d120b9c01469df42f371e2cf42d612cc04db8c94",
+          "version": "0.3.0"
+        }
+      },
+      {
+        "package": "GradientView",
+        "repositoryURL": "https://github.com/soffes/GradientView.git",
+        "state": {
+          "branch": null,
+          "revision": "2ba23c51b7a4d55ee732379eb0eb35987a773185",
+          "version": "2.3.4"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="geO-P9-G2c" customClass="CardViewCell" customModule="iSurvey" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="507" height="553"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yaN-sz-1z1">
+                <rect key="frame" x="0.0" y="0.0" width="507" height="553"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oaF-xs-3HB">
+                        <rect key="frame" x="93.5" y="152" width="320" height="249"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="L6O-fg-C5X">
+                                <rect key="frame" x="16" y="16" width="288" height="217"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xww-g7-3th">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="102"/>
+                                        <string key="text">asadsvadshjvadshjvadshjvadsasadsvadshjvadshjvadshjvadsasadsvadshjvadshjvadshjvadsasadsvadshjvadshjvadshjvadsasadsvadshjvadshjvadshjvadsasadsvadshjvadshjvadshjvadsasadsvadshjvadshjvadshjvadsasadsvadshjvadshjvadshjvads</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your answer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yuG-Px-tcy">
+                                        <rect key="frame" x="0.0" y="120" width="288" height="34"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="answerTextfieldTextChanged:" destination="geO-P9-G2c" eventType="editingChanged" id="1O3-3p-ZbJ"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIh-di-kf2" customClass="LoadingButton" customModule="iSurvey" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="172" width="288" height="45"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="xo5-gO-Cox"/>
+                                        </constraints>
+                                        <state key="normal" title="Submit">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="submit"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onSubmitTap:" destination="geO-P9-G2c" eventType="touchUpInside" id="jUy-zp-RWy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="217" id="Jvc-Tf-pSK"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="L6O-fg-C5X" firstAttribute="top" secondItem="oaF-xs-3HB" secondAttribute="top" constant="16" id="PsG-gx-UJb"/>
+                            <constraint firstItem="L6O-fg-C5X" firstAttribute="leading" secondItem="oaF-xs-3HB" secondAttribute="leading" constant="16" id="ctM-E5-dd8"/>
+                            <constraint firstAttribute="bottom" secondItem="L6O-fg-C5X" secondAttribute="bottom" constant="16" id="en9-xY-dgb"/>
+                            <constraint firstAttribute="width" constant="320" id="vP8-eE-I14"/>
+                            <constraint firstAttribute="trailing" secondItem="L6O-fg-C5X" secondAttribute="trailing" constant="16" id="xqt-hO-LKE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oaF-xs-3HB" firstAttribute="centerY" secondItem="yaN-sz-1z1" secondAttribute="centerY" id="KzU-iO-lv4"/>
+                    <constraint firstItem="oaF-xs-3HB" firstAttribute="centerX" secondItem="yaN-sz-1z1" secondAttribute="centerX" id="tk0-VP-Kwb"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="488" height="406"/>
+            <connections>
+                <outlet property="answerTextField" destination="yuG-Px-tcy" id="n22-Lp-yN3"/>
+                <outlet property="backgroundContainerView" destination="oaF-xs-3HB" id="xcX-ae-soM"/>
+                <outlet property="questionLabel" destination="Xww-g7-3th" id="uhn-vE-rRx"/>
+                <outlet property="submitButton" destination="WIh-di-kf2" id="RQf-oM-2PO"/>
+            </connections>
+            <point key="canvasLocation" x="306.52173913043481" y="130.24553571428572"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.12941176470588237" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
